@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 killTomcat(){
    pid=`ps -ef|grep tomcat|grep java|awk `{print $2}
