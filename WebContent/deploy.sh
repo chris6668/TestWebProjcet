@@ -1,16 +1,17 @@
 #!/bin/bash
 
 killTomcat(){
-   pid=`ps -ef|grep tomcat|grep java|awk `{print $2}
+   pid=`ps -ef|grep tomcat|grep java|awk '{print $2}'`
    echo "tomcat id list :$pid"
    if ["$pid"=""]
-   echo "tomcat pid value is null."
+	echo "tomcat pid value is null."
    then
 	echo "no tomcat pid value."
    else
 	kill -9 $pid
    fi
 }
+
 cd $PROJ_PATH/TestWebProjcet
 mvn clean install
 
