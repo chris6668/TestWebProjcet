@@ -14,12 +14,12 @@ killTomcat(){
 cd $PROJ_PATH/TestWebProjcet
 mvn clean install
 
-killTomcat
+#killTomcat
 
-rm -rf $TOMCAT_APP_PATH/webapps/TestWebProjcet
-rm -rf $TOMCAT_APP_PATH/webapps/TestWebProjcet.war
+#rm -rf $TOMCAT_APP_PATH/webapps/TestWebProjcet
+#rm -rf $TOMCAT_APP_PATH/webapps/TestWebProjcet.war
 
-cp $PROJ_PATH/TestWebProjcet/target/TestWebProjcet.war $TOMCAT_APP_PATH/webapps/
+#cp $PROJ_PATH/TestWebProjcet/target/TestWebProjcet.war $TOMCAT_APP_PATH/webapps/
 
-cd $TOMCAT_APP_PATH/
-sh bin/startup.sh
+#cd $TOMCAT_APP_PATH/
+#sh bin/startup.sh
